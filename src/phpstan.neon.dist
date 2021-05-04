@@ -1,0 +1,15 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+
+    paths:
+        - app
+
+    level: 8
+
+    excludePaths:
+        - ./*/*/FileToBeExcluded.php
+        - ./app/Http/Middleware/
+
+    checkMissingIterableValueType: false
