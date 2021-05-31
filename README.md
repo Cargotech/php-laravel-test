@@ -24,8 +24,7 @@ https://laravel.com/
 ```php
 \Modules\Api\Services\ClientService()->get('/cargos');
 ```
-**
-Задание 2. Создать модуль Cargo.**
+**Задание 2. Создать модуль Cargo.**
 
 У модуля должны быть только папки **Services, Console, Http, Config, Models, Events, Listeners, Notifications**.
 
