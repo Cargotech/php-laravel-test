@@ -13,7 +13,7 @@ https://laravel.com/
    4.1 И в каждом генерируемом нами файле через ``make:`` (только те что используем в проекте, все не надо);
 5. Код по возможности требуется покрывать простыми тестами;
 
-Задание 1. Создать модуль Api.
+**Задание 1. Создать модуль Api.**
 
 У модуля должны быть только папки **Services, Console, Config**. Модуль должен уметь обращаться к
 апи https://api.cargo.tech/*, например к https://api.cargo.tech/v1/cargos (реализовать только GET). Данные надо отдавать
@@ -24,8 +24,8 @@ https://laravel.com/
 ```php
 \Modules\Api\Services\ClientService()->get('/cargos');
 ```
-
-Задание 2. Создать модуль Cargo.
+**
+Задание 2. Создать модуль Cargo.**
 
 У модуля должны быть только папки **Services, Console, Http, Config, Models, Events, Listeners, Notifications**.
 
