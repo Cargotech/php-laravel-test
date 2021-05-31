@@ -21,7 +21,9 @@ https://laravel.com/
 Модуль должен иметь возможность получить данные с помощью limit и offset (все или например первые 3 страницы).
 Например, если в апи 3000 записей, макс. лимит на страницу 100 записей, нам надо сделать 100 * 30 запросов к апи что-бы получить все данные.
 
+```php
     \Modules\Api\Services\ClientService()->get/post/delete
+```
 
 Задание 2. Создать модуль Cargo.
 
@@ -56,17 +58,19 @@ Truck должен быть jsonb полем, с кастомным cast https:/
 
 Пример с кодом:
 
-    Cargo::create(['truck' => ['tir' => true....]]) - работает, на вход передаем массив, сеттер должен учесть это
+```php
+    Cargo::create(['truck' => ['tir' => true]]);// работает, на вход передаем массив, сеттер должен учесть это
 
-    $object = new TruckDto(['tir' => true....]);
-    Cargo::create(['truck' => $object) - работает, на вход передаем объект
+    $object = new TruckDto(['tir' => true]);
+    Cargo::create(['truck' => $object]); // работает, на вход передаем объект
 
-    TruckDtoExample
+    class TruckDtoExample
     {
 		public bool $tir = false;
 		public bool $t1 = false;
 		public bool $cmr = false;
     }
+```
 
 **Дополнительно.**
 
