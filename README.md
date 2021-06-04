@@ -38,6 +38,8 @@
 
 Данные надо отдавать ларавел коллекцией.
 
+Для пагинации используются limit и offset, например ?limit=25,offset=25 - вторая страница.
+
 ```php
 \Modules\Api\Services\ClientService()->get('/cargos');
 ```
